@@ -4,12 +4,14 @@ colorama
 fastapi
 h11
 idna
+joblib
 numpy
 pandas
 pydantic
 python-dateutil
 pytz
 six
+sklearn
 sniffio
 starlette
 typing_extensions
