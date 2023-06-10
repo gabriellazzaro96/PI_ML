@@ -4,6 +4,9 @@ from typing import Optional     #Esta clase permite que el ingreso de un atribut
 import pandas as pd
 from enum import Enum
 import numpy as np
+import joblib
+from ml_gabi import get_recommendations, train_model
+
 
 app = FastAPI()
 
@@ -71,6 +74,29 @@ def get_director(director: str):
     resp = df1[['title', 'release_date', 'return', 'budget', 'earns']].to_dict(orient='records')
     
     return [director, retorno_dir, resp]
+
+
+@app.get("/prediccion/{movie_title}")
+def realizar_prediccion(movie_title: str):
+    # Ruta al archivo del modelo
+    #modelo_ruta = 'ml_gabi.py'
+
+    # Cargar el modelo
+    #modelo = joblib.load(modelo_ruta)
+
+    # Realizar la prediccion con el modelo
+    #prediccion = modelo.predict(movie_title)
+
+    #resp = {"pelicula": movie_title, "prediccion": prediccion}
+    # Devolver la respuesta
+
+
+    knn, data, tfidf_matrix = train_model()
+
+    resp = get_recommendations(movie_title, knn, data, tfidf_matrix)
+
+    return resp
    
+
 
 
