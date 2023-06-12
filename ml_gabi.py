@@ -4,7 +4,7 @@ from sklearn.neighbors import NearestNeighbors
 import streamlit as st
 
 # Cargar el dataset
-data = pd.read_csv('datasets/movies_clean.csv')
+data = pd.read_csv('datasets\movies_clean.csv')
 
 data = data[['title', 'belongs_to_collection', 'original_language', 'genres', 'overview', 'popularity', 'production_companies', 'production_countries', 'release_date', 'cast', 'director']]
 
