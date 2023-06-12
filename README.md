@@ -1,6 +1,6 @@
 <div align="center">
 
-![Logo de SoyHenry](images\logo_henry.png)
+![Logo de SoyHenry](images/logo_henry.png)
  
 # PROYECTO INDIVIDUAL N°1 💻🎬
 ## Machine Learning Operations (MLOps)
