@@ -11,6 +11,10 @@
 ## Resumen 📜
 El siguiente proyecto consta de dos partes. En primer lugar, se realiza un sistema de consultas para obtener información relacionada con películas, como popularidad, directores, actores y fechas, a partir de una base de datos de películas. En segundo lugar, se desarrolla un sistema de recomendación de películas basado en Machine Learning, el cual, a partir de un título ingresado por el usuario, devuelve un listado de 5 películas similares.
 
+## 🔗Links 
+- 🌐[API de Consultas Cinematográficas](https://pi-mlo-gel.onrender.com/docs)
+- 🎬[Sistema de Recomendación de Películas](https://gabriellazzaro96-pi-ml-ml-gabi-8gho5e.streamlit.app/)
+
 ## Herramientas 🛠️
 - :snake: [Python](https://docs.python.org/): Lenguaje de programación utilizado en el proyecto.
 - :panda_face: [Pandas](https://pandas.pydata.org/): Biblioteca de manipulación y análisis de datos.
@@ -54,5 +58,5 @@ El código proporciona una forma interactiva de explorar y descubrir nuevas pel�
 
 
 ## Contacto 📞
-- Correo electrónico: gabriellazzaro96@gmail.com#da
+- Correo electrónico: gabriellazzaro96@gmail.com
 - GitHub: [https://github.com/gabriellazzaro96](https://github.com/gabriellazzaro96)
