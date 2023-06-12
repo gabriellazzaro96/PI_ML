@@ -4,7 +4,7 @@ from sklearn.neighbors import NearestNeighbors
 import streamlit as st
 
 # Cargar el dataset
-data = pd.read_csv('movies_clean.csv')
+data = pd.read_csv('datasets/movies_clean.csv')
 
 data = data[['title', 'belongs_to_collection', 'original_language', 'genres', 'overview', 'popularity', 'production_companies', 'production_countries', 'release_date', 'cast', 'director']]
 
@@ -15,8 +15,9 @@ data['features'] = data.apply(lambda x: ' '.join(x.values.astype(str)), axis=1)
 tfidf = TfidfVectorizer(stop_words='english')
 tfidf_matrix = tfidf.fit_transform(data['features'])
 
-# Crear el modelo de vecinos más cercanos
+# Creamos el modelo de vecinos más cercanos
 knn = NearestNeighbors(metric='cosine', algorithm='brute')
+# Entrenamos el modelo
 knn.fit(tfidf_matrix)
 
 def get_recommendations(title, knn_model, data, num_recommendations=5):
