@@ -8,12 +8,25 @@
 
 </div>
 
+
 ## Resumen 📜
 El siguiente proyecto consta de dos partes. En primer lugar, se realiza un sistema de consultas para obtener información relacionada con películas, como popularidad, directores, actores y fechas, a partir de una base de datos de películas. En segundo lugar, se desarrolla un sistema de recomendación de películas basado en Machine Learning, el cual, a partir de un título ingresado por el usuario, devuelve un listado de 5 películas similares.
+
+
+## Video tutorial 🎥
+
+[📺Click aquí para ver el video📹](https://youtu.be/UTxSrMxaHnM)
+
+
+## Recomendaciones previas ⚠️
+- Escribir todo en minúscula.
+- No utilizar caracteres especiales o acentuados.
+
 
 ## 🔗Links 
 - 🌐[API de Consultas Cinematográficas](https://pi-mlo-gel.onrender.com/docs)
 - 🎬[Sistema de Recomendación de Películas](https://gabriellazzaro96-pi-ml-ml-gabi-8gho5e.streamlit.app/)
+
 
 ## Herramientas 🛠️
 - :snake: [Python](https://docs.python.org/): Lenguaje de programación utilizado en el proyecto.
@@ -24,9 +37,6 @@ El siguiente proyecto consta de dos partes. En primer lugar, se realiza un siste
 - :unicorn: [Uvicorn](https://www.uvicorn.org/): Servidor ASGI de alto rendimiento para aplicaciones web en Python.
 - :computer: [Streamlit](https://docs.streamlit.io/): Biblioteca para la creación de aplicaciones web interactivas en Python.
 
-## Recomendaciones previas ⚠️
-- Escribir todo en minúscula.
-- No utilizar caracteres especiales o acentuados.
 
 ## Contexto y Rol 📚👨‍💻
 Se trabajó simulando ser un Data Scientist en una startup que provee servicios de agregación de plataformas de streaming. Se partió desde cero con dos conjuntos de datos con poca madurez, a los cuales se les realizó un trabajo exhaustivo de ingeniería de datos. Esto se puede observar en el archivo ETL.py, donde se llevaron a cabo tareas como la fusión de conjuntos de datos, eliminación de columnas con poca información, conversión de tipos de datos, eliminación y completado de valores nulos, y desanidado de columnas, entre otras. Las principales herramientas utilizadas para esto fueron :snake: Python, :panda_face: Pandas y :1234: NumPy.
@@ -52,9 +62,6 @@ Su funcionalidad se resume en los siguientes pasos:
 5. Configura la interfaz de usuario con Streamlit para permitir al usuario ingresar un título de película y obtener recomendaciones similares.
 
 El código proporciona una forma interactiva de explorar y descubrir nuevas películas basadas en recomendaciones generadas por el modelo. Se puede acceder al Sistema de Recomendación a través del siguiente enlace: [https://gabriellazzaro96-pi-ml-ml-gabi-8gho5e.streamlit.app/](https://gabriellazzaro96-pi-ml-ml-gabi-8gho5e.streamlit.app/)
-
-## Video tutorial 🎥
-
 
 
 ## Contacto 📞

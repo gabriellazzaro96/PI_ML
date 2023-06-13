@@ -207,20 +207,14 @@ df['status'] = df['status'].astype(str)
 df['title'] = df['title'].astype(str)
 df['cast'] = df['cast'].astype(str)
 df['director'] = df['director'].astype(str)
-
-df['belongs_to_collection'] = df['belongs_to_collection'].astype(str)
-
 df['earns'] = df['revenue'] - df['budget']
 
 # Pasar a minúscula los registros de todas las columnas
 df = df.applymap(lambda x: x.lower() if isinstance(x, str) else x)
 
+#Reseteamos el indice
 df = df.reset_index(drop=True)
 
+#Exportamos el dataframe limpio
 df.to_csv('movies_clean.csv', index=False)
 
-df['director'].values
-
-df.info()
-
-df.head()
